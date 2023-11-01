@@ -1,0 +1,38 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #063543;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+  }
+  
+  #animated-image {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: top 2s ease, transform 2s ease;
+    width: 100vh;
+  }
+  
+  #new-image {
+    position: absolute;
+    top: 15vh;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+
+  .fade-out {
+    opacity: 0;
+    transition: opacity 2s ease;
+}
