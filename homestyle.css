@@ -208,6 +208,19 @@ body {
     }
 }
 
+@media screen and (max-width: 1000px) {
+    .buttons {
+        top: 30px;
+    }
+    
+    .download,
+    .button {
+        font-size: 20px;
+        margin: 0 20px;
+        padding: 8px 16px;
+    }
+}
+
 .boks2 {
     background-color:#063543;
     width: 100%;
